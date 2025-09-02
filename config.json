@@ -14,7 +14,7 @@
   "shortDateFormat": "MMMM d, yyyy, hh:mm a",
 
   "passwordProtected": true,
-  "hashedPassword": "$2y$10$.obUg.BUqTbvHruZyQO5rO5ZJ3jNU6bxkL24USlAYRcl43GlY28e.",
+  "hashedPassword": "$2y$10$aUWwbuvoFhq3QZWqUui7BubN1JKqDsaWXk4Xic6Gp7DyRdduh66yq",
   "hashCostFactor": 10,
 
   "entrypoint": "Overview",
