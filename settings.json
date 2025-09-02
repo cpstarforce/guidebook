@@ -1,0 +1,26 @@
+{
+  "animations": {
+    "value": "default",
+    "defaultValue": true
+  },
+  "blurEffects": {
+    "value": "default",
+    "defaultValue": true
+  },
+  "preloader": {
+    "value": "default",
+    "defaultValue": true
+  },
+  "autoCloseDefinitionInfoboxes": {
+    "value": "default",
+    "defaultValue": true
+  },
+  "showDiscordWidget": {
+    "value": "default",
+    "defaultValue": true
+  },
+  "discordWidgetColor": {
+    "value": "default",
+    "defaultValue": "#FFD36E"
+  }
+}

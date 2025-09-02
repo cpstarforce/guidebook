@@ -1,0 +1,93 @@
+span.discord-channel,
+span.discord-voice-channel,
+span.discord-stage-channel {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: middle;
+  color: #ADBBFF;
+}
+
+span.discord-channel:hover,
+span.discord-voice-channel:hover,
+span.discord-stage-channel:hover {
+  color: #FFFEFF;
+}
+
+span.discord-channel {
+  background: #3C4270;
+  border-radius: 3px;
+  padding-top: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 0;
+}
+
+span.discord-channel:hover {
+  background: #5865F2;
+}
+
+span.discord-channel[channelID] {
+  cursor: pointer;
+}
+
+span.discord-voice-channel {
+  background: #3C4270;
+  border-radius: 3px;
+  padding-top: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 0;
+}
+
+span.discord-voice-channel:hover {
+  background: #5865F2;
+}
+
+span.discord-voice-channel[channelID] {
+  cursor: pointer;
+}
+
+span.discord-stage-channel {
+  background: #3C4270;
+  border-radius: 3px;
+  padding-top: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 0;
+}
+
+span.discord-stage-channel:hover {
+  background: #5865F2;
+}
+
+span.discord-stage-channel[channelID] {
+  cursor: pointer;
+}
+
+span.discord-role {
+  background: #3C4270;
+  border-radius: 3px;
+  padding-top: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 0;
+}
+
+span.slash-command::before {
+  content: "/";
+}
+
+span.slash-command {
+  background: #3C4270;
+  border-radius: 3px;
+  padding-top: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 0;
+  cursor: copy;
+}
+
+span.slash-command:hover {
+  background: #5865F2;
+}

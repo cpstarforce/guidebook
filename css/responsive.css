@@ -1,0 +1,31 @@
+@media only screen and (max-width: 1000px) {
+  main {
+    width: calc(80% - (2 * var(--xxx-padding)));
+    height: calc(100% - (2 * var(--xxx-padding)));
+    padding: var(--xxx-padding);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  aside {
+    display: none;
+  }
+  main {
+    left: 0;
+    width: calc(100% - (2 * var(--xxxx-padding)));
+    height: calc(100% - (2 * var(--xxxx-padding)));
+    padding: var(--xxxx-padding);
+  }
+  .mobile-only {
+    display: initial;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    left: 0;
+    width: calc(100% - (2 * var(--xxx-padding)));
+    height: calc(100% - (2 * var(--xxx-padding)));
+    padding: var(--xxx-padding);
+  }
+}

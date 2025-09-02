@@ -1,0 +1,26 @@
+<!-- page:centered -->
+
+<h1>Welcome to the {{guidebook.shortName}}!</h1>
+
+<p>
+  Hello, reader! Welcome to the official guidebook for <b>{{guidebook.armyName}}</b>. This guidebook is designed to help you get started with everything you need to know about our army. Whether you're a <dfn name="Staff-in-Training">Staff-in-Training</dfn> candidate or a long-term veteran, this guidebook has something for everyone. You can begin by navigating through the sidebar on the left, and using the miniature <a onclick="client.discordWidget.toggle()">Discord integration</a> to keep an eye on the main server.
+</p>
+
+<div class="carousel">
+  <div onclick="client.loadArticle('articles/A_Welcome_Letter.html')">
+    <b>A Welcome Letter</b>
+    <p>For newcomers. Read a letter from the Leadership.</p>
+  </div>
+  <div onclick="client.loadArticle('articles/Club_Penguin_Events/Tricks_During_Events.html')">
+    <b>Tricks During Events</b>
+    <p>Amp up your event performance with these tips.</p>
+  </div>
+  <div onclick="client.loadArticle('articles/Overview.html')">
+    <b>Overview</b>
+    <p>Get an overview of the army and its structure.</p>
+  </div>
+</div>
+
+<small>
+  This guidebook was last updated on {{guidebook.lastUpdated}}.
+</small>

@@ -1,0 +1,19 @@
+{
+
+  "Overview.html": {  "name": "Overview", "nested": false, "listed": true  },
+  "Foreword.html": {  "name": "Foreword", "nested": false, "listed": true  },
+  "A_Welcome_Letter.html": {  "name": "A Welcome Letter", "nested": false, "listed": true  },
+  "General_Responsibilities.html": {  "name": "General Responsibilities", "nested": false, "listed": true  },
+
+  "Growing_SF.html": {  "name": "Growing SF", "nested": false, "listed": true  },
+  "Growing_SF/Recruiting.html": {  "name": "Recruiting", "nested": true, "listed": true  },
+  "Growing_SF/Enlisting.html": {  "name": "Enlisting", "nested": true, "listed": true  },
+  "Growing_SF/Verification.html": {  "name": "Verification", "nested": true, "listed": true  },
+  "Growing_SF/Training.html": {  "name": "Training", "nested": true, "listed": true  },
+
+  "Club_Penguin_Events.html": {  "name": "Club Penguin Events", "nested": false, "listed": true  },
+  "Club_Penguin_Events/Scheduling_Events.html": {  "name": "Scheduling Events", "nested": true, "listed": true  },
+  "Club_Penguin_Events/Leading_Events.html": {  "name": "Leading Events", "nested": true, "listed": true  },
+  "Club_Penguin_Events/Tricks_During_Events.html": {  "name": "Tricks During Events", "nested": true, "listed": true  }
+
+}

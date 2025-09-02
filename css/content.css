@@ -1,0 +1,230 @@
+hr {
+  width: 75%;
+  opacity: 0.1;
+}
+
+main hr {
+  margin: 20px auto;
+}
+
+p {
+  width: 100%;
+}
+
+main.centered p {
+  text-align: center;
+}
+
+b {
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+p b,
+div b {
+  font-weight: 600;
+  margin: initial;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+a:focus,
+a:active {
+  color: var(--link-focus);
+}
+
+code {
+  background: var(--xxxx-diminished);
+  padding: 0 var(--padding);
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+dfn {
+  color: var(--definitionColor);
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+}
+
+dfn:hover {
+  filter: brightness(80%);
+}
+
+dfn:active,
+dfn:focus {
+  filter: brightness(60%);
+}
+
+main h1 {
+  font-family: var(--headings-fontFamily);
+  text-transform: uppercase;
+}
+
+main h3 {
+  width: 100%;
+}
+
+main p:not(main.centered p) {
+  width: calc(100% - 10px);
+  padding-left: 10px;
+}
+
+main img {
+  max-width: calc(100% / 1.01);
+  margin: 10px 0;
+  border-radius: 10px;
+  scale: 0.99;
+}
+
+main img:hover {
+  cursor: zoom-in;
+  scale: 1;
+}
+
+small {
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+  opacity: 0.75;
+}
+
+small.danger {
+  color: var(--danger);
+}
+
+.prevent-selection {
+  user-select: none;
+}
+
+.variable-colored {
+  color: var(--variableIndicator);
+}
+
+.luxon {
+  border-radius: 5px;
+  background: var(--brightened);
+  color: var(--foreground);
+  padding: 0 var(--padding);
+}
+
+div.carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+div.carousel div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--diminished);
+  padding: var(--x-padding);
+  width: 100%;
+  height: 100%;
+  border: 2.5px solid #444444;
+  border-radius: 10px;
+  user-select: none;
+}
+
+div.carousel div:hover {
+  background: radial-gradient(circle at bottom, #FF913720, #202020, #202020);
+  box-shadow: 0 0 30px 15px var(--xx-diminished);
+  cursor: pointer;
+  scale: 1.01;
+}
+
+div.carousel div:active,
+div.carousel div:focus {
+  background: radial-gradient(circle at bottom, #D1742720, #181818, #181818);
+  box-shadow: 0 0 30px 15px var(--xx-diminished);
+  scale: 1.01;
+}
+
+div.carousel div b {
+  opacity: 0.9;
+}
+
+div.carousel div p {
+  opacity: 0.9;
+}
+
+div.info,
+div.tip,
+div.warning,
+div.danger {
+  width: 90%;
+  padding: 15px 20px;
+  border-radius: 15px;
+  margin: 10px;
+}
+
+div.info::before,
+div.tip::before,
+div.warning::before,
+div.danger::before {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-right: 0;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+div.info {
+  background: var(--info);
+  border-left: 3px solid var(--info-sideColor);
+}
+
+div.tip {
+  background: var(--tip);
+  border-left: 3px solid var(--tip-sideColor);
+}
+
+div.warning {
+  background: var(--warning);
+  border-left: 3px solid var(--warning-sideColor);
+}
+
+div.danger {
+  background: var(--danger);
+  border-left: 3px solid var(--danger-sideColor);
+}
+
+div.info::before {
+  content: "Info";
+}
+
+div.tip::before {
+  content: "Tip";
+}
+
+div.warning::before {
+  content: "Warning";
+}
+
+div.danger::before {
+  content: "Danger";
+}
+
+ul, ol {
+  width: 95%;
+}
+
+ul li,
+ol li {
+  margin: 5px 0;
+}

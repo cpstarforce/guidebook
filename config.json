@@ -1,0 +1,23 @@
+{
+  "name": "Star Force — The Guidebook",
+  "shortName": "SF Guidebook",
+  "armyName": "Star Force",
+  "lastUpdated": 1756832008000,
+
+  "WidgetBot": {
+    "available": true,
+    "guildID": "1321447355354185790",
+    "channelID": "1321447355354185793"
+  },
+
+  "longDateFormat": "cccc, MMMM d, yyyy, hh:mm a",
+  "shortDateFormat": "MMMM d, yyyy, hh:mm a",
+
+  "passwordProtected": true,
+  "hashedPassword": "$2y$10$.obUg.BUqTbvHruZyQO5rO5ZJ3jNU6bxkL24USlAYRcl43GlY28e.",
+  "hashCostFactor": 10,
+
+  "entrypoint": "Overview",
+  "articleDirectory": "./articles",
+  "mediaDirectory": "./media"
+}

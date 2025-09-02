@@ -1,0 +1,417 @@
+:root.theme-dark {
+
+  --background: #202020;
+  --foreground: #f7f7f7;
+  --theme: #FFD063;
+  --opaque: #202020;
+  --link: #9DD3FF;
+  --link-hover: #67BAFF;
+  --link-focus: #3190DF;
+  --fontFamily: 'Outfit', 'Inter', sans-serif;
+  --headings-fontFamily: 'Unbounded', 'Outfit', 'Inter', sans-serif;
+  --variableIndicator: #9FFFD4;
+  --definitionColor: #FFE46E;
+
+  --danger: #FF808020;
+  --danger-sideColor: #FF4040;
+  --info: #70C7FF20;
+  --info-sideColor: #3A99D4;
+  --warning: #FFE46D20;
+  --warning-sideColor: #CCB23F;
+  --tip: #BAFF7A20;
+  --tip-sideColor: #78BB3A;
+
+  --diminished: #00000020;
+  --x-diminished: #00000040;
+  --xx-diminished: #00000060;
+  --xxx-diminished: #00000080;
+  --xxxx-diminished: #000000A0;
+
+  --brightened: #FFFFFF20;
+  --x-brightened: #FFFFFF40;
+  --xx-brightened: #FFFFFF60;
+  --xxx-brightened: #FFFFFF80;
+  --xxxx-brightened: #FFFFFFA0;
+
+  --padding: 5px;
+  --x-padding: 15px;
+  --xx-padding: 30px;
+  --xxx-padding: 50px;
+  --xxxx-padding: 100px;
+
+  --blur: 5px;
+  --x-blur: 15px;
+  --xx-blur: 30px;
+  --xxx-blur: 50px;
+  --xxxx-blur: 100px;
+
+}
+
+:root {
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+aside::-webkit-scrollbar {
+  width: 5px;
+}
+
+.infobox::-webkit-scrollbar {
+  width: 2.5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--brightened); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--xx-brightened); 
+}
+
+::placeholder {
+  user-select: none;
+}
+
+::selection {
+  background-color: #003B72;
+}
+
+* {
+  transition: color 100ms, background-color 100ms, opacity 100ms, filter 250ms, scale 250ms, box-shadow 250ms;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--fontFamily);
+  font-weight: 300;
+  line-height: 1.4;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 500px 0 var(--xxxx-diminished) inset;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--diminished);
+  width: calc(20% - (2 * var(--xx-padding)));
+  height: calc(100% - (2 * var(--xx-padding)));
+  padding: var(--xx-padding);
+  overflow-y: auto;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  left: 20%;
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  align-items: center;
+  width: calc(80% - (2 * var(--xxxx-padding)));
+  height: calc(100% - (2 * var(--xxxx-padding)));
+  padding: var(--xxxx-padding);
+  overflow-y: auto;
+}
+
+main.centered {
+  justify-content: center;
+}
+
+body:not(.no-animations) main.glitched {
+  animation: rotate 5s, fluctuating_light 1s infinite;
+}
+
+aside img {
+  width: 100%;
+  height: auto;
+}
+
+aside b#title {
+  display: block;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+aside a.articleLink {
+  display: block;
+  color: var(--theme);
+  font-weight: 500;
+  padding: var(--padding) var(--x-padding);
+  margin: var(--padding) 0;
+  margin-left: calc(var(--x-padding) * -1);
+  border-radius: 5px;
+}
+
+aside a.articleLink.nested {
+  border-left: 5px solid var(--xx-diminished);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: var(--x-padding);
+}
+
+aside a.articleLink:hover {
+  background: var(--diminished);
+}
+
+aside a.articleLink:focus,
+aside a.articleLink:active,
+aside a.articleLink.viewing {
+  background: var(--x-diminished);
+}
+
+aside a.articleLink.nested {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+aside a.articleLink:last-child {
+  margin-bottom: calc(var(--xx-padding) + var(--xx-padding));
+}
+
+aside #settingsLauncher {
+  position: fixed;
+  width: calc(20% - (2 * var(--xx-padding)));
+  left: 0;
+  bottom: 0;
+  padding: calc(var(--x-padding) * 1.125) var(--xx-padding);
+  background: var(--xx-diminished);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+aside #settingsLauncher:hover {
+  background: var(--xxx-diminished);
+}
+
+aside #settingsLauncher:active,
+aside #settingsLauncher:focus {
+  background: var(--xxxx-diminished);
+}
+
+button#sidebarMenuOpener {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px 0 0 10px;
+  font-size: 20px;
+}
+
+div#wrapperBackdrop {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background: var(--xxxx-diminished);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(var(--blur));
+}
+
+body.no-blur-effects div#wrapperBackdrop {
+  background: #000000F0;
+  backdrop-filter: initial;
+}
+
+div.modal {
+  display: block;
+  position: fixed;
+  background: var(--brightened);
+  padding: var(--xxx-padding);
+  border-radius: 10px;
+  overflow: auto;
+}
+
+div.modal.not-unboxed {
+  width: calc(50% - (2 * var(--xxx-padding)));
+  height: calc((100% / 1.5) - (2 * var(--xxx-padding)));
+  top: calc(100% / 6);
+  left: 25%;
+}
+
+div.modal.unboxed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.modal.unboxed:not(#modal-imageViewer) {
+  max-width: 50%;
+}
+
+div.modal#modal-imageViewer {
+  overflow: initial;
+}
+
+div.modal#modal-imageViewer img {
+  max-width: 80vw;
+  max-height: 80vh;
+  cursor: zoom-out;
+}
+
+div.modal:not(#modal-imageViewer) img {
+  max-height: 200px;
+}
+
+div.modal span.title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+div#toolbar {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  height: 35px;
+  background: #404040;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+div#toolbar button {
+  background: var(--xx-brightened);
+  border-radius: 5px;
+  padding: 5px;
+  width: 35px; 
+  height: 35px;
+}
+
+div#infobox {
+  position: fixed;
+  max-width: calc(100% / 2.5);
+  min-width: calc(100% / 5);
+  display: flex;
+  flex-direction: column;
+  background: var(--brightened);
+  padding: var(--padding) var(--x-padding);
+  border-radius: 5px;
+  overflow: auto;
+  cursor: pointer;
+  backdrop-filter: brightness(0.1);
+}
+
+div#infobox:hover {
+  filter: brightness(80%);
+}
+
+div#infobox:focus,
+div#infobox:active {
+  filter: brightness(60%);
+}
+
+div#infobox.info {
+  border-left: 5px var(--x-diminished) solid;
+  padding: 1rem;
+}
+
+div#infobox.definition {
+  display: flex;
+  flex-direction: row;
+  height: 128px;
+  padding: 0;
+  overflow: auto;
+}
+
+div#infobox.definition img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 100%;
+}
+
+div#infobox.definition p {
+  padding: 0.5rem 1rem;
+}
+
+div#infobox .infobox-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+}
+
+div#infobox.bottom-right {
+  bottom: 5%;
+  right: 5%;
+}
+
+div#infobox.hide {
+  display: none;
+  opacity: 0;
+}
+
+div#infobox.show {
+  display: flex;
+  flex-direction: row;
+  opacity: 0.9;
+}
+
+input {
+  background: var(--opaque);
+  color: var(--foreground);
+  font-family: var(--fontFamily);
+  padding: calc((var(--padding) + var(--x-padding)) / 2);
+  border: none;
+  outline: 0px solid var(--brightened);
+  border-radius: 5px;
+}
+
+input[type="color"] {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 25px;
+}
+
+input:active,
+input:focus {
+  outline: 5px solid var(--brightened);
+}
+
+button {
+  background: var(--xx-diminished);
+  color: var(--foreground);
+  padding: calc(var(--x-padding) / 1.25) var(--x-padding);
+  border: none;
+  border-radius: 15px;
+  font-family: var(--fontFamily)
+}
+
+button:hover {
+  background: var(--xxx-diminished);
+  filter: brightness(calc(100% / 1.5));
+}
+
+button:active,
+button:focus {
+  background: var(--xxxx-diminished);
+  filter: brightness(calc(100% / 3));
+}
+
+body:not(.no-blur-effects) div#wrapperBackdrop input {
+  background: var(--xxxx-diminished);
+}

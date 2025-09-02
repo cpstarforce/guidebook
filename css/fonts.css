@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Outfit';
+  src: url('../fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../fonts/Unbounded/Unbounded-VariableFont_wght.ttf') format('truetype');
+}

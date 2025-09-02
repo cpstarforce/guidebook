@@ -1,0 +1,35 @@
+@keyframes rotate {
+  0% {
+    rotate: 180deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@keyframes fluctuating_light {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  26% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  76% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
